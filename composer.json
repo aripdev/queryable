@@ -1,6 +1,7 @@
 {
     "name": "aripdev/queryable",
     "description": "Laravel package for paginate, filter, sort and search query",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Aripdev\\Queryable\\": "src/"
