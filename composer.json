@@ -1,0 +1,25 @@
+{
+    "name": "aripdev/queryable",
+    "description": "Laravel package for paginate, filter, sort and search query",
+    "autoload": {
+        "psr-4": {
+            "Aripdev\\Queryable\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aripdev",
+            "email": "aripdevel@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "9.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aripdev\\Queryable\\QueryableServiceProvider"
+            ]
+        }
+    }
+}
