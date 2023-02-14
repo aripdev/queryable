@@ -14,12 +14,12 @@ trait HasCustomHeader
 
             $headers  = App::make('xheader');
 
-            if (!empty($headers)) {
-                foreach ($headers as $key => $value) {
+            if (!empty($header = $headers->headers)) {
+                foreach ($header as $key => $value) {
                     $response->header($key, $value);
                 }
             }
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
             Log::alert($e->getMessage() . " :" . __CLASS__ . ":" . __LINE__);
         }
